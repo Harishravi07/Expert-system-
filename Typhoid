@@ -1,0 +1,15 @@
+T= int(input("Temperature:"))
+C,H,N,S = input("Enter four values: ").split()
+print("Temperature: ", T)
+print("Cold: ", C)
+print("Headache: ", H)
+print("Nausea: " , N)
+print("StomachFlu: ", S)
+if((T>=98) and (C=="yes") and (H=="yes") and (N=="yes") and (S=="yes")):
+ print("Typhoid!!!")
+elif((T>=98) and (C=="yes") and (H=="yes") and (N=="no") and (S=="no")):
+ print("Just normal fever so take medication and rest")
+elif((T<98) and (C=="yes") and (H=="yes") and (N=="no") and (S=="no")):
+ print("Just common cold so do home remedies and rest")
+elif((T<98) and (C=="yes") and (H=="yes") and (N=="yes") and (S=="yes")):
+ print("Some sorta allergy and severe cold")
