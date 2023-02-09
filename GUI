@@ -1,0 +1,10 @@
+from tkinter  
+import * a = Tk()  
+a.geometry("400x400")  
+a.title("test")  
+var = StringVar()  
+label = Label(a, textvariable =  
+    var, bg = "pink"\, bd = 5, justify = RIGHT, padx = 10, pady = 10)  
+var.set("I am groot")  
+label.pack()  
+a.mainloop()
